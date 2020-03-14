@@ -1,14 +1,16 @@
 package com.alexur.sell.dao.po;
 
-import lombok.Data;
+import lombok.*;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 @Data
+@ToString
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+@Table(name = "SellerInfo")
 public class SellerInfoPO{
     @Id
     @GeneratedValue
